@@ -1,0 +1,39 @@
+.formdiv{
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background: url('../images/j.jpg');
+    background-position: center;
+    margin-top: 50px;
+}
+.inputclass{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #606161;
+    outline: none;
+    border-radius: 4px;
+}
+.user{
+    margin-top: 10px;
+}
+.button{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #8207D7;
+    background-color: #fff;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color:#8207D7;
+}
+.input{
+    margin-top: 10px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+

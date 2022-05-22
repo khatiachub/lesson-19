@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    <section>
+        <div class="formdiv">
+            <form action="#" id="form" method="POST">
+                <div class="block">
+                    <label for="name" class="user">Username</label>
+                    <input type="text" id="name" class="inputclass input" name="username">
+                    <span class="errortext" id="error_username"></span>
+                </div>
+                <div class="block">
+                    <label for="mail" class="user">Email</label>
+                    <input type="email" id="mail" class="inputclass input" name="email" onkeydown="validation()">
+                    <span class="errortext" id="error_email"></span>
+
+                </div>
+                <div class="block">
+                    <label for="password" class="user">Password</label>
+                    <div>
+                        <input type="password" id="password" class="inputclass input" name="passw">
+                        <i id='iconeye' class="fa-solid fa-eye"></i>
+                    </div>
+                    <span class="errortext" id="error_passw"></span>
+
+                </div>
+                <div class="block">
+                    <label for="password2" class="user">Password</label>
+                    <div>
+                        <input type="password" id="password2" class="inputclass input" name="passw2">
+                        <i id="eyeicon" class="fa-solid fa-eye"></i>
+                    </div>
+                    <span class="errortext" id="error_passw2"></span>
+                </div>
+                <div class="input">
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                    <span class="errortext" id="error_gender"></span>
+                </div>
+                <div class="input">
+                    <input type="checkbox" id="checkbox" name="check">
+                    <label for="">I agree with terms and conditions</label>
+                    <span class="errortext" id="error_check"></span>
+                </div>
+                <div>
+                    <button type="submit" class="button input" id="button">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
