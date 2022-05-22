@@ -1,5 +1,4 @@
 let forms=document.getElementById('form');
-let mail=document.getElementById('mail').value;
 
 forms.addEventListener('submit',function(event){
     event.preventDefault();
@@ -13,7 +12,9 @@ forms.addEventListener('submit',function(event){
     }
 
  //email   
-    if(mail==''){
+ let email=document.getElementById('mail').value;
+
+    if(email==''){
         errors.email='your email must not be empty'
     }
 //password  
@@ -48,6 +49,9 @@ forms.addEventListener('submit',function(event){
             spanText.textContent=errors[item];
             spanText.style.color='red'
         }
+    }
+    if (Object.keys(errors).length == 0) {
+        form.submit();
     }
 });
 
@@ -86,6 +90,7 @@ icon2.addEventListener('click',showPassword2);
 
 
 function validation(){
+    let mail=document.getElementById('mail').value;
 
     let emailStructure = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let emailSpan=document.getElementById('error_email')
